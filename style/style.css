@@ -1,52 +1,54 @@
 /* imports */
 @import url(alvo.css);
 @import url(reset.css);
-
+@import url(aim.css);
 
 /* rooot de variaveis */
 :root {
-    --colorBg1: #1e1936;
-    --colorBg2: #2e255c;
-    --colorBg3: #463c7a;
-    --white: #ffffff;
-    --black: #00030c;
+/* Outras variaveis */
     --font: Arial, Helvetica, sans-serif;
 
-    --colorRed: #da1414;
-    --colorYellow: #e0dd29;
-    --colorGreen: #34df2e;
+/* variaveis do preto e branco que eu gosto */
+    --white: #ffffff;
+    --black: #00030c;
+
+/* variaveis da cor do ceu */
+    --colorBlueSky: #2790b0;
+
+/* variaveis da cor dos alvos */
+    --colorRedAlvo: #d71d0b;
+    --colorYellowAlvo: #eaf566;
+    --colorGreenAlvo: #26b528;
+
+/* variaveis da cor do futer bg */
+    --colorBgFooter1: #008f00;
+    --colorBgFooter2: #13a214;
+    --colorBgFooter3: #26b528;
+    --colorBgFooter4: #38c73b;
+    --colorBgFooter5: #4bda4f;
 }
 
 /* body */
 
 body {
-    background-image: linear-gradient(135deg ,var(--colorBg1), var(--colorBg2), var(--colorBg3));
-    cursor: none;
+    background-color: var(--colorBlueSky);
     height: 100vh;
     width: 100vw;
+/* para impedir a seleção de textos e quebrar a jogabilidade */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 
 /* main */
 
 main {
-    height: calc(100% - 100px);
+    height: 85%;
 }
 
 footer {
-    height: 100px;
-    background-image: url(img/MetalTexture.png);
+    height: 15%;
 }
 
-
-/* icone de mira */
-
-#icon {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    position: absolute;
-    background-image: url(icons/ain.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-}

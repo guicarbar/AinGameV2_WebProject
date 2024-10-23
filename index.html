@@ -9,9 +9,9 @@
 
     <title>teste</title>
 </head>
-<body>
+<body id="container">
 <!-- icone de mira -->
-    <div id="icon"></div>
+    <div id="aim"></div>
 
 <!-- game area -->
     <main>
@@ -20,11 +20,37 @@
 
 <!-- footer -->
     <footer>
-        <button>Start</button>
-        <button>Restart</button>
+<!-- Menu -->
+        <div>
+            <button>Start</button>
+            <button>Restart</button>
+        </div>
+
+<!-- Hotbar -->
+        <div>
+            <!-- pontos -->
+            <div>
+                <span>Points:</span>
+                <span>1000</span>
+            </div>
+            <!-- time -->
+             <div>
+                <span>time</span>
+             </div>
+            <!-- boost -->
+             <div>
+                <span>boost</span>
+             </div>
+        </div>
+
+<!-- tutorial -->
+        <div>
+            tutorial
+        </div>
     </footer>
 
 <!-- script -->
-    <script src="script/main.js"></script>
+    <script src="script/aimControl.js"></script>
+    <script src="script/clickAIm.js"></script>
 </body>
 </html>

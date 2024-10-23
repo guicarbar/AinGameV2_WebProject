@@ -8,17 +8,17 @@
 }
 
 .red_area {
-    background-color: var(--colorRed);
+    background-color: var(--colorRedAlvo);
     border: 1px solid var(--black);
 }
 
 .yellow_area {
-    background-color: var(--colorYellow);
+    background-color: var(--colorYellowAlvo);
     border: 1px solid var(--black);
 }
 
 .grem_area {
-    background-color: var(--colorGreen);
+    background-color: var(--colorGreenAlvo);
     border: 1px solid var(--black);
 }
 
