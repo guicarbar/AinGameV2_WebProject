@@ -1,0 +1,35 @@
+/* alvo */
+
+.alvo, .alvo>div, .alvo>div>div, .alvo>div>div>div {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red_area {
+    background-color: var(--colorRed);
+    border: 1px solid var(--black);
+}
+
+.yellow_area {
+    background-color: var(--colorYellow);
+    border: 1px solid var(--black);
+}
+
+.grem_area {
+    background-color: var(--colorGreen);
+    border: 1px solid var(--black);
+}
+
+.p {
+    padding: 1em;
+}
+
+.m {
+    padding: 1.4em;
+}
+
+.g {
+    padding: 1.8em;
+}

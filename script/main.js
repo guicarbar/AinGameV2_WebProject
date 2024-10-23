@@ -1,4 +1,4 @@
-// variavel do peixe
+// variavel do div 
 const icon = document.getElementById('icon')
 
 function mouseMove(event) {

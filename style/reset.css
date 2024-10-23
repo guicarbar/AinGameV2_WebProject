@@ -1,0 +1,10 @@
+/* reset basico do css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white);
+    font-family: var(--font);
+    font-weight: 600;
+}
