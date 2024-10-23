@@ -4,8 +4,6 @@
     --colorBg3: #463c7a;
     --white: #ffffff;
     --font: Arial, Helvetica, sans-serif;
-
-    --colorPeixe: #ff4500;
 }
 
 /* reset basico do css */
@@ -24,6 +22,7 @@
 
 body {
     background-image: linear-gradient(135deg ,var(--colorBg1), var(--colorBg2), var(--colorBg3));
+    cursor: none;
 }
 
 
@@ -35,12 +34,14 @@ main {
 }
 
 
-/* peixe */
+/* icone de mira */
 
 #icon {
     width: 64px;
     height: 64px;
     border-radius: 50%;
     position: absolute;
-    background-color: var(--colorPeixe);
+    background-image: url(icons/ain.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
