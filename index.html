@@ -7,45 +7,76 @@
 <!-- link de style no css -->
     <link rel="stylesheet" href="style/style.css">
 
-    <title>teste</title>
+    <title>Aim Game V2</title>
 </head>
 <body id="container">
 <!-- icone de mira -->
     <div id="aim"></div>
 
 <!-- game area -->
-    <main>
-        
+    <main onclick="teste(event)">
+        <div class="alvo">
+            <div class="red_area p" onclick="filhoClick(event, 1)">
+                <div class="yellow_area" onclick="filhoClick(event, 2)">
+                    <div class="grem_area" onclick="filhoClick(event, 3)">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alvo">
+            <div class="red_area m" onclick="filhoClick(event)">
+                <div class="yellow_area">
+                    <div class="grem_area">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alvo">
+            <div class="red_area g" onclick="filhoClick(event)">
+                <div class="yellow_area">
+                    <div class="grem_area">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="booster life"></div>
+
+        <div class="booster diamond"></div>
     </main>
 
 <!-- footer -->
     <footer>
 <!-- Menu -->
-        <div>
+        <div class="menu">
+            <!-- startar -->
             <button>Start</button>
-            <button>Restart</button>
+            <!-- time -->
+            <div>
+                <div>Time:</div>
+                <span>TimeBar</span>
+            </div>
         </div>
 
 <!-- Hotbar -->
-        <div>
+        <div class="hotbar">
             <!-- pontos -->
             <div>
                 <span>Points:</span>
-                <span>1000</span>
+                <span>0</span>
             </div>
-            <!-- time -->
+            <!-- Life -->
              <div>
-                <span>time</span>
-             </div>
-            <!-- boost -->
-             <div>
-                <span>boost</span>
+                <div>Life:</div>
+                <span>Lifebar</span>
              </div>
         </div>
 
-<!-- tutorial -->
+<!-- creditos criador -->
         <div>
-            tutorial
+            criador
         </div>
     </footer>
 

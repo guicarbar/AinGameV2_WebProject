@@ -26,6 +26,9 @@
     --colorBgFooter3: #26b528;
     --colorBgFooter4: #38c73b;
     --colorBgFooter5: #4bda4f;
+
+/* borda do footer */
+    --colorBdFooter: #215f21;
 }
 
 /* body */
@@ -34,6 +37,7 @@ body {
     background-color: var(--colorBlueSky);
     height: 100vh;
     width: 100vw;
+    cursor: none;
 /* para impedir a seleção de textos e quebrar a jogabilidade */
     user-select: none;
     -webkit-user-select: none;
@@ -46,9 +50,87 @@ body {
 
 main {
     height: 85%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
+
+
+
+/* footer | hootbar */
 
 footer {
     height: 15%;
+    display: flex;
+    justify-content: space-between;
 }
 
+footer > div {
+    background-image: linear-gradient(180deg, var(--colorBgFooter1), var(--colorBgFooter2), var(--colorBgFooter3));
+    border: 8px solid var(--colorBdFooter);
+}
+
+footer > div:nth-child(1) {
+    border-radius: 0px 32px 0px 0px;
+}
+
+footer > div:nth-child(2) {
+    border-radius: 32px 32px 0px 0px;
+}
+
+footer > div:nth-child(3) {
+    border-radius: 32px 0px 0px 0px;
+}
+
+
+/* menu */
+
+.menu {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu > button {
+    width: 112px;
+    margin: 0 2em;
+    cursor: none;
+    color: var(--black);
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 32px;
+    border: 4px solid var(--colorBdFooter);
+    background-color: var(--colorBlueSky);
+    transition: all 0.3s ease-in;
+}
+
+.menu > button:hover {
+    transform: scale(1.1);
+}
+
+.menu > button:active {
+    transform: scale(0.9);
+    background-color: var(--colorYellowAlvo);
+}
+
+.menu > div {
+    width: 100%;
+    padding: 1em 0.8em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+}
+
+
+/* hotbar */
+
+.hotbar {
+    padding: 0 2em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}

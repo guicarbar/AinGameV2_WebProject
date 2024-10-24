@@ -1,5 +1,6 @@
 /* alvo */
 
+
 .alvo, .alvo>div, .alvo>div>div, .alvo>div>div>div {
     border-radius: 50%;
     display: flex;
@@ -22,14 +23,75 @@
     border: 1px solid var(--black);
 }
 
+
+/* tamanhos dos alvos */
+/* p - pequeno */
 .p {
-    padding: 1em;
+    width: 112px;
+    height: 112px;
 }
 
+.p > div {
+    width: 64px;
+    height: 64px;
+}
+
+.p > div > div {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* m - medio */
 .m {
-    padding: 1.4em;
+    width: 144px;
+    height: 144px;
 }
 
+.m > div {
+    width: 96px;
+    height: 96px;
+}
+
+.m > div > div {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* g - grande */
 .g {
-    padding: 1.8em;
+    width: 160px;
+    height: 160px;
+}
+
+.g > div {
+    width: 112px;
+    height: 112px;
+}
+
+.g > div > div {
+    width: 48px;
+    height: 48px;
+}
+
+
+/* booster */
+
+.booster {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.life {
+    background-image: url(icons/heart.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.diamond {
+    background-image: url(icons/diamond.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
 }

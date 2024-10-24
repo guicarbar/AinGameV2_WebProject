@@ -7,6 +7,8 @@
     background-image: url(icons/ain.svg);
     background-repeat: no-repeat;
     background-position: center center;
+    /* para não capturar eventos de click */
+    pointer-events: none;
 }
 
 /* estilo pra div do click */
@@ -16,7 +18,7 @@
     width: 48px;
     height: 48px;
     opacity: 1;
-    animation: markAnimation 1s ease-in-out;
+    animation: markAnimation 0.5s ease-in-out forwards;
 }
 
 @keyframes markAnimation {

@@ -1,6 +1,6 @@
 function target(event) {
     // verificando a existência do click
-    console.log("mouse clicado")
+    console.log("mouse marcando")
 
     // pegando a div total
     const area = document.getElementById("container")
@@ -50,8 +50,23 @@ function target(event) {
 
     setTimeout(() => {
         aimTarget.remove()
-    }, 1000)
+    }, 500)
 }
 
 // event listener
 document.addEventListener('click', target);
+
+
+
+
+
+function teste(event) {
+    if (event.target === event.currentTarget) {
+        console.log("foi clicado na div principal")
+    }
+}
+
+function filhoClick(event, point) {
+    event.stopPropagation()
+    console.log('Div filho clicada!' + point)
+}

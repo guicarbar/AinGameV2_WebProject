@@ -2,7 +2,7 @@
 const aim = document.getElementById('aim')
 
 function mouseMove(event) {
-    console.log ("mouse se movendo")
+    console.log ("mouse movendo")
 
     // largura e altura do aim
     const aimWidth = aim.offsetWidth
