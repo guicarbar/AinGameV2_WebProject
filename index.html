@@ -14,50 +14,44 @@
     <div id="aim"></div>
 
 <!-- game area -->
-    <main onclick="teste(event)">
+    <main onclick="mainClick(event)">
         <div class="alvo">
-            <div class="red_area p" onclick="filhoClick(event, 1)">
-                <div class="yellow_area" onclick="filhoClick(event, 2)">
-                    <div class="grem_area" onclick="filhoClick(event, 3)">
+            <div class="red_area p" onclick="addPoint(event, 7)">
+                <div class="yellow_area" onclick="addPoint(event, 8)">
+                    <div class="grem_area" onclick="addPoint(event, 10)">
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="alvo">
-            <div class="red_area m" onclick="filhoClick(event)">
-                <div class="yellow_area">
-                    <div class="grem_area">
+            <div class="red_area m" onclick="addPoint(event, 4)">
+                <div class="yellow_area" onclick="addPoint(event, 5)">
+                    <div class="grem_area" onclick="addPoint(event, 6)">
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="alvo">
-            <div class="red_area g" onclick="filhoClick(event)">
-                <div class="yellow_area">
-                    <div class="grem_area">
+            <div class="red_area g" onclick="addPoint(event, 1)">
+                <div class="yellow_area" onclick="addPoint(event, 2)">
+                    <div class="grem_area" onclick="addPoint(event, 3)">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="booster life"></div>
+        <div class="booster life" onclick="booster(event, true)"></div>
 
-        <div class="booster diamond"></div>
+        <div class="booster diamond" onclick="booster(event, false)"></div>
     </main>
 
 <!-- footer -->
     <footer>
 <!-- Menu -->
         <div class="menu">
-            <!-- startar -->
             <button>Start</button>
-            <!-- time -->
-            <div>
-                <div>Time:</div>
-                <span>TimeBar</span>
-            </div>
         </div>
 
 <!-- Hotbar -->
@@ -65,7 +59,7 @@
             <!-- pontos -->
             <div>
                 <span>Points:</span>
-                <span>0</span>
+                <span id="pontos">0</span>
             </div>
             <!-- Life -->
              <div>
@@ -75,13 +69,16 @@
         </div>
 
 <!-- creditos criador -->
-        <div>
-            criador
+        <div class="creator">
+            <p>Criador:</p>
+            <a href="https://guicarbar.github.io/Portfolio_Guilherme_V1/">Guilherme Carvalho</a>
         </div>
     </footer>
 
 <!-- script -->
     <script src="script/aimControl.js"></script>
     <script src="script/clickAIm.js"></script>
+    <script src="script/pointLife.js"></script>
+    <script src="script/boosters.js"></script>
 </body>
 </html>

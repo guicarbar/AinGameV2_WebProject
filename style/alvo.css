@@ -79,9 +79,11 @@
 /* booster */
 
 .booster {
-    height: 48px;
-    width: 48px;
+    height: 64px;
+    width: 64px;
+    border: 1px solid var(--black);
     border-radius: 50%;
+    background-color: var(--colorGreenAlvo);
 }
 
 .life {

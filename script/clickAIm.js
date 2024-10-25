@@ -55,18 +55,3 @@ function target(event) {
 
 // event listener
 document.addEventListener('click', target);
-
-
-
-
-
-function teste(event) {
-    if (event.target === event.currentTarget) {
-        console.log("foi clicado na div principal")
-    }
-}
-
-function filhoClick(event, point) {
-    event.stopPropagation()
-    console.log('Div filho clicada!' + point)
-}

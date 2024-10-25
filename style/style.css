@@ -116,12 +116,20 @@ footer > div:nth-child(3) {
     background-color: var(--colorYellowAlvo);
 }
 
-.menu > div {
-    width: 100%;
-    padding: 1em 0.8em;
+
+
+/* creator */
+
+.creator {
+    padding: 0 1em;
     display: flex;
     flex-flow: column nowrap;
-    align-items: start;
+    justify-content: center;
+}
+
+.creator > a {
+    text-decoration: none;
+    cursor: none;
 }
 
 
